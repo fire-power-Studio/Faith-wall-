@@ -25,7 +25,7 @@ const IMAGES = [
     { name: "A Pillar of Fire by Night", file: "images/wallpaper7_A_Pillar_of_Fire_by_Night.jpg" },
     
     
-    { name: "A Table before Me", file: "images/wallpaper8_A_Table_Before_Me.jpg" },
+    { name: "a table before me", file: "images/wallpaper8_A_Table_Before_Me.jpg" },
     
     
     { name: "Greater Than He That Is in the World", file: "images/wallpaper9_Greater_Than_He_That_Is_in_the_World.jpg" },
