@@ -24,8 +24,15 @@ const IMAGES = [
     
     { name: "A Pillar of Fire by Night", file: "images/wallpaper7_A_Pillar_of_Fire_by_Night.jpg" },
    
+   
+   { name: "Overflows", file:"images/wallpaper8_Overflows.jpg"}
+   
     
     { name: "Greater Than He That Is in the World", file: "images/wallpaper9_Greater_Than_He_That_Is_in_the_World.jpg" },
+
+
+{ name:"Walls of Water", file:"images/wallpaper10_Walls_of_Water.jpg"},
+
     
     { name: "The Great Dragon Cast Out", file: "images/wallpaper11_The_Great_Dragon_Cast_Out.jpg" },
     
