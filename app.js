@@ -31,7 +31,7 @@ const IMAGES = [
     { name: "Greater Than He That Is in the World", file: "images/wallpaper9_Greater_Than_He_That_Is_in_the_World.jpg" },
     
     
-    { name: "The Parting of the Red Sea",file: "images/wallpaper10_The_Parting_of_the_Red_Sea.jpg" },
+    { name: "The Parting of the Red Sea",file: "images/wallpaper10_the_parting_of_the_red_sea.jpg" },
     
     { name: "The Great Dragon Cast Out", file: "images/wallpaper11_The_Great_Dragon_Cast_Out.jpg" },
     
