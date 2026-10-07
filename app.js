@@ -66,7 +66,7 @@ const VIDEOS = [
     { name: "The Gate of Heaven", file: "videos/live wallpaper6_The_Gate_of_Heaven.mp4" },
     
     
-    { name: "God Called Unto Him", file: "videos/live wallpaper7_God_Called_Unto_Him.mp4" },
+    { name: "God Called Unto Him", file: "videos/live wallpaper7_God_Called_Unto_Him1.mp4" },
     
     
     { name: "The Angel in the Way", file: "videos/live wallpaper8_The_Angel_in_the_Way.mp4" },
