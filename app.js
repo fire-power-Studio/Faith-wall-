@@ -25,13 +25,13 @@ const IMAGES = [
     { name: "A Pillar of Fire by Night", file: "images/wallpaper7_A_Pillar_of_Fire_by_Night.jpg" },
     
     
-    { name: "A Table Before Me", file: "images/wallpaper8_A_Table_Before_Me.jpg" },
+    { name: "Over flows", file: "images/wallpaper8_Over_flows.jpg" },
     
     
     { name: "Greater Than He That Is in the World", file: "images/wallpaper9_Greater_Than_He_That_Is_in_the_World.jpg" },
     
     
-    { name: "The Parting of the Red Sea",file: "images/wallpaper10_The_Parting_of_the_Red_Sea.jpg" },
+    { name: "Walls of Water",file: "images/wallpaper10_Walls_of_Water.jpg" },
     
     { name: "The Great Dragon Cast Out", file: "images/wallpaper11_The_Great_Dragon_Cast_Out.jpg" },
     
@@ -60,11 +60,21 @@ const VIDEOS = [
     { name: "Purged by Fire", file: "videos/live wallpaper4_Purged_by_Fire.mp4" },
     
     
-    { name: "Ocean Sunset", file: "videos/video5_ocean_sunset.mp4" },
-    { name: "Forest Light", file: "videos/video6_forest_light.mp4" },
-    { name: "City Cross", file: "videos/video7_city_cross.mp4" },
-    { name: "Lion of Judah", file: "videos/video8_lion_of_judah.mp4" },
-    { name: "Nativity", file: "videos/video9_nativity_scene.mp4" },
+    { name: "The Whole Armour of God", file: "videos/live wallpaper5_The_Whole_Armour_of_God.mp4" },
+    
+    
+    { name: "The Gate of Heaven", file: "videos/live wallpaper6_The_Gate_of_Heaven.mp4" },
+    
+    
+    { name: "God Called Unto Him", file: "videos/live wallpaper7_God_Called_Unto_Him.mp4" },
+    
+    
+    { name: "The Angel in the Way", file: "videos/live wallpaper8_The_Angel_in_the_Way.mp4" },
+    
+    
+    { name: "Destroy Their Altars", file: "videos/live wallpaper9_Destroy_Their_Altars.mp4" },
+    
+    
     { name: "Three Crosses", file: "videos/video10_three_crosses.mp4" },
     { name: "Heavenly Light", file: "videos/video11_underwater_light.mp4" },
     { name: "Praise & Worship", file: "videos/video12_praise_worship.mp4" },
