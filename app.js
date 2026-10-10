@@ -4,75 +4,33 @@
    ========================================================= */
 
 const IMAGES = [
-    { name: "The Living One", file: "images/wallpaper1_The_Living_One.jpg" },
-    
-    
-    { name: "My Light and Salvation", file: "images/wallpaper2_My_Light_and_Salvation.jpg" },
-    
-    
-    { name: "The Angel of the LORD", file: "images/wallpaper3_The_Angel_of_the_LORD.jpg" },
-    
-    
-    { name: "The Fourth Is Like the Son of God", file: "images/wallpaper4_The_Fourth_Is_Like_the_Son_of_God.jpg" },
-    
-    
-    { name: "Giant Slayer", file: "images/wallpaper5_Giant_Slayer.jpg" },
-    
-    
-    { name: "Then the Fire of the LORD Fell", file: "images/wallpaper6_Then_the_Fire_of_the_LORD_Fell.jpg" },
-    
-    
-    { name: "A Pillar of Fire by Night", file: "images/wallpaper7_A_Pillar_of_Fire_by_Night.jpg" },
-    
-    
-    { name: "A Table Before Me", file: "images/wallpaper8_A_Table_Before_Me.jpg" },
-    
-    
-    { name: "Greater Than He That Is in the World", file: "images/wallpaper9_Greater_Than_He_That_Is_in_the_World.jpg" },
-    
-    
-    { name: "The Parting of the Red Sea",file: "images/wallpaper10_The_Parting_of_the_Red_Sea.jpg" },
-    
-    { name: "The Great Dragon Cast Out", file: "images/wallpaper11_The_Great_Dragon_Cast_Out.jpg" },
-    
-    
-    { name: "Supernatural Speed", file: "images/wallpaper12_Supernatural_Speed.jpg" },
-    
-    
-    { name: "Defeating the Roaring Lion", file: "images/wallpaper13_Defeating_the_Roaring_Lion.jpg" },
-    
-    
-    { name: "Peace Be Still ", file: "images/wallpaper14_Peace_Be_still.jpg" },
-    
-    { name: "Heavenly Guardians",file:"images/wallpaper15_Heavenly_Guardians.jpg"}
+    { name: "The Living One", file: "images/wallpaper-01-living-one.jpg" },
+    { name: "My Light and Salvation", file: "images/wallpaper-02-light-and-salvation.jpg" },
+    { name: "The Angel of the LORD", file: "images/wallpaper-03-angel-of-the-lord.jpg" },
+    { name: "The Fourth Is Like the Son of God", file: "images/wallpaper-04-fourth-in-fire.jpg" },
+    { name: "Giant Slayer", file: "images/wallpaper-05-giant-slayer.jpg" },
+    { name: "Then the Fire of the LORD Fell", file: "images/wallpaper-06-fire-of-the-lord.jpg" },
+    { name: "A Pillar of Fire by Night", file: "images/wallpaper-07-pillar-of-fire.jpg" },
+    { name: "Overflows", file: "images/wallpaper-08-overflows.jpg" },
+    { name: "Greater Than He That Is in the World", file: "images/wallpaper-09-greater-is-he.jpg" },
+    { name: "Walls of Water", file: "images/wallpaper-10-walls-of-water.jpg" },
+    { name: "The Great Dragon Cast Out", file: "images/wallpaper-11-great-dragon-cast-out.jpg" },
+    { name: "Supernatural Speed", file: "images/wallpaper-12-supernatural-speed.jpg" },
+    { name: "Defeating the Roaring Lion", file: "images/wallpaper-13-roaring-lion.jpg" },
+    { name: "Peace Be Still", file: "images/wallpaper-14-peace-be-still.jpg" },
+    { name: "Heavenly Guardians", file: "images/wallpaper-15-heavenly-guardians.jpg" }
 ];
 
 const VIDEOS = [
-    { name: "Daniel 10: The Unseen War", file: "videos/live wallpaper1_Daniel_10_The_Unseen_War.mp4" },
-    
-    
-    { name: "I Will Fear No Evil", file: "videos/live wallpaper2_I_Will_Fear_No_Evil.mp4" },
-    
-    
-    { name: "Pierced by Divine Light", file: "videos/live wallpaper3_Pierced_by_Divine_Light.mp4" },
-    
-    
-    { name: "Purged by Fire", file: "videos/live wallpaper4_Purged_by_Fire.mp4" },
-    
-    
-    { name: "Ocean Sunset", file: "videos/video5_ocean_sunset.mp4" },
-    { name: "Forest Light", file: "videos/video6_forest_light.mp4" },
-    { name: "City Cross", file: "videos/video7_city_cross.mp4" },
-    { name: "Lion of Judah", file: "videos/video8_lion_of_judah.mp4" },
-    { name: "Nativity", file: "videos/video9_nativity_scene.mp4" },
-    { name: "Three Crosses", file: "videos/video10_three_crosses.mp4" },
-    { name: "Heavenly Light", file: "videos/video11_underwater_light.mp4" },
-    { name: "Praise & Worship", file: "videos/video12_praise_worship.mp4" },
-    { name: "Rain", file: "videos/video13_rain_nature.mp4" },
-    { name: "Mountain", file: "videos/video14_mountain_sunset.mp4" },
-    { name: "God of fire", file:"videos/video15_God_of_fire.mp4"
-        
-    },
+    { name: "Daniel 10: The Unseen War", file: "videos/live-01-daniel-unseen-war.mp4" },
+    { name: "I Will Fear No Evil", file: "videos/live-02-fear-no-evil.mp4" },
+    { name: "Pierced by Divine Light", file: "videos/live-03-divine-light.mp4" },
+    { name: "Purged by Fire", file: "videos/live-04-purged-by-fire.mp4" },
+    { name: "The Whole Armour of God", file: "videos/live-05-armour-of-god.mp4" },
+    { name: "The Gate of Heaven", file: "videos/live-06-gate-of-heaven.mp4" },
+    { name: "God Called Unto Him", file: "videos/live-07-god-called-unto-him.mp4" },
+    { name: "The Angel in the Way", file: "videos/live-08-angel-in-the-way.mp4" },
+    { name: "Destroy Their Altars", file: "videos/live-09-destroy-their-altars.mp4" }
 ];
 
 const PROMPTS = [
@@ -468,7 +426,8 @@ function downloadCurrent(target) {
             link.click();
             link.remove();
 
-            URL.revokeObjectURL(url);
+            // Give the browser time to start the download before releasing the blob URL.
+            window.setTimeout(() => URL.revokeObjectURL(url), 1000);
             showToast("Custom wallpaper downloaded");
         }, "image/png");
 
