@@ -119,13 +119,12 @@ function createVideoButtons() {
         button.className = "video-button";
         button.dataset.index = index;
 
-        const preview = document.createElement("video");
-        preview.src = wallpaper.file;
-        preview.muted = true;
-        preview.loop = true;
-        preview.autoplay = true;
-        preview.playsInline = true;
-        preview.preload = "metadata";
+        // Do not load or autoplay every video in the list. This lightweight
+        // placeholder keeps the page fast; the full MP4 loads only after a tap.
+        const preview = document.createElement("div");
+        preview.className = "video-preview-placeholder";
+        preview.setAttribute("aria-hidden", "true");
+        preview.textContent = "▶";
 
         const label = document.createElement("span");
         label.className = "button-label";
